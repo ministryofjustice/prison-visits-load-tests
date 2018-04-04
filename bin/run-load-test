@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+ls -la
+echo "" > jmeter_results.jtl
+
+jmeter -n "$@"
+
+failed_request=$(tail -n+1 jmeter_results.jtl | awk -F "," '{print $8}' | grep false | wc -l)
+
+if [[ "$failed_request" -gt "0" ]];
+then
+    echo "$failed_request requests failed."
+    exit 1
+else
+    echo "Load test succeeded."
+    exit 0
+fi
