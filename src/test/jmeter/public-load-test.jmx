@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -36,7 +36,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">${__P(threads)}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__property(threads)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time"></stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
@@ -80,6 +80,7 @@
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -109,28 +110,28 @@
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][day]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_day)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_day)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][day]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][month]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_month)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_month)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][month]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][year]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_year)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_year)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][year]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[number]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_number)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_number)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[number]</stringProp>
@@ -185,6 +186,7 @@
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -200,28 +202,28 @@
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][day]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_day)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_day)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][day]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][month]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_month)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_month)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][month]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][year]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_year)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_year)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][year]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[number]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_number)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_number)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[number]</stringProp>
@@ -294,6 +296,7 @@
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -323,28 +326,28 @@
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][day]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_day)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_day)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][day]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][month]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_month)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_month)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][month]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][year]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_year)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_year)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][year]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[number]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_number)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_number)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[number]</stringProp>
@@ -372,7 +375,7 @@
               </elementProp>
               <elementProp name="visitors_step[email_address]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(visitor_email_address)}</stringProp>
+                <stringProp name="Argument.value">${__property(visitor_email_address)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[email_address]</stringProp>
@@ -464,6 +467,7 @@
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -493,28 +497,28 @@
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][day]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_day)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_day)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][day]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][month]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_month)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_month)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][month]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[date_of_birth][year]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_dob_year)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_dob_year)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[date_of_birth][year]</stringProp>
               </elementProp>
               <elementProp name="prisoner_step[number]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(prisoner_number)}</stringProp>
+                <stringProp name="Argument.value">${__property(prisoner_number)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[number]</stringProp>
@@ -542,7 +546,7 @@
               </elementProp>
               <elementProp name="visitors_step[email_address]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">${__P(visitor_email_address)}</stringProp>
+                <stringProp name="Argument.value">${__property(visitor_email_address)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[email_address]</stringProp>
@@ -641,6 +645,7 @@
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
@@ -677,13 +682,9 @@
             <sampleCount>true</sampleCount>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/kathpobee-norris/Desktop/jmeter_results.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
-    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
-      <boolProp name="WorkBench.save">true</boolProp>
-    </WorkBench>
-    <hashTree/>
   </hashTree>
 </jmeterTestPlan>
