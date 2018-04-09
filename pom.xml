@@ -33,10 +33,6 @@
 
         <configuration>
 
-          <!-- <testFilesIncluded> -->
-          <!--   <jMeterTestFile>public-load-test.jmx</jMeterTestFile> -->
-          <!-- </testFilesIncluded> -->
-
 
           <propertiesUser>
             <prisoner_dob_day>${env.PRISONER_DOB_DAY}</prisoner_dob_day>
