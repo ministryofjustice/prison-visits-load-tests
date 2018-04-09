@@ -32,9 +32,20 @@
         </executions>
 
         <configuration>
-          <testFilesIncluded>
-            <jMeterTestFile>public-load-test.jmx</jMeterTestFile>
-          </testFilesIncluded>
+
+          <!-- <testFilesIncluded> -->
+          <!--   <jMeterTestFile>public-load-test.jmx</jMeterTestFile> -->
+          <!-- </testFilesIncluded> -->
+
+
+          <propertiesUser>
+            <prisoner_dob_day>${env.PRISONER_DOB_DAY}</prisoner_dob_day>
+            <prisoner_dob_month>${env.PRISONER_DOB_MONTH}</prisoner_dob_month>
+            <prisoner_dob_year>${env.PRISONER_DOB_YEAR}</prisoner_dob_year>
+            <prisoner_number>${env.PRISONER_NUMBER}</prisoner_number>
+            <visitor_email_address>${env.VISITOR_EMAIL_ADDRESS}</visitor_email_address>
+            <threads>${env.THREADS}</threads>
+          </propertiesUser>
         </configuration>
 
       </plugin>
