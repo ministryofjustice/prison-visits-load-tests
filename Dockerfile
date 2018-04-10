@@ -11,4 +11,6 @@ ADD . $APP_HOME
 
 VOLUME "$USER_HOME_DIR/.m2"
 
-CMD ["mvn", "install"]
+RUN mvn install
+
+CMD ["mvn", "verify", "clean", "--fail-never"]
