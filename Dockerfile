@@ -11,6 +11,6 @@ ADD . $APP_HOME
 
 VOLUME "$USER_HOME_DIR/.m2"
 
-RUN mvn dependency:resolve
+RUN mvn package
 
 CMD ["mvn", "verify", "clean", "--fail-never"]
