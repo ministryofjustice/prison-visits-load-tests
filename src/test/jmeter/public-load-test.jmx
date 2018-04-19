@@ -230,7 +230,7 @@
               </elementProp>
               <elementProp name="prisoner_step[prison_id]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">8076d43d-429d-4e19-aac1-178ff9d112d3</stringProp>
+                <stringProp name="Argument.value">${__property(prison_id)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[prison_id]</stringProp>
@@ -354,7 +354,7 @@
               </elementProp>
               <elementProp name="prisoner_step[prison_id]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">8076d43d-429d-4e19-aac1-178ff9d112d3</stringProp>
+                <stringProp name="Argument.value">${__property(prison_id)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[prison_id]</stringProp>
@@ -525,7 +525,7 @@
               </elementProp>
               <elementProp name="prisoner_step[prison_id]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">8076d43d-429d-4e19-aac1-178ff9d112d3</stringProp>
+                <stringProp name="Argument.value">${__property(prison_id)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[prison_id]</stringProp>
