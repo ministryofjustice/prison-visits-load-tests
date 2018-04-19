@@ -138,7 +138,7 @@
               </elementProp>
               <elementProp name="prisoner_step[prison_id]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">8076d43d-429d-4e19-aac1-178ff9d112d3</stringProp>
+                <stringProp name="Argument.value">${__property(prison_id)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">prisoner_step[prison_id]</stringProp>
@@ -389,14 +389,14 @@
               </elementProp>
               <elementProp name="visitors_step[visitors_attributes[0][first_name]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Jim</stringProp>
+                <stringProp name="Argument.value">Load</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[visitors_attributes[0][first_name]</stringProp>
               </elementProp>
               <elementProp name="visitors_step[visitors_attributes[0][last_name]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Smith</stringProp>
+                <stringProp name="Argument.value">Test</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[visitors_attributes[0][last_name]</stringProp>
@@ -560,14 +560,14 @@
               </elementProp>
               <elementProp name="visitors_step[visitors_attributes[0][first_name]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Jim</stringProp>
+                <stringProp name="Argument.value">Load</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[visitors_attributes[0][first_name]</stringProp>
               </elementProp>
               <elementProp name="visitors_step[visitors_attributes[0][last_name]" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">Smith</stringProp>
+                <stringProp name="Argument.value">Test</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">visitors_step[visitors_attributes[0][last_name]</stringProp>
