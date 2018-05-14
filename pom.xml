@@ -39,6 +39,7 @@
             <prisoner_dob_month>${env.PRISONER_DOB_MONTH}</prisoner_dob_month>
             <prisoner_dob_year>${env.PRISONER_DOB_YEAR}</prisoner_dob_year>
             <prisoner_number>${env.PRISONER_NUMBER}</prisoner_number>
+            <prison_id>${env.PRISON_ID}</prison_id>
             <visitor_email_address>${env.VISITOR_EMAIL_ADDRESS}</visitor_email_address>
             <threads>${env.THREADS}</threads>
           </propertiesUser>
